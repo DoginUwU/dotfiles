@@ -94,5 +94,9 @@ return {
   {
     "prisma/vim-prisma",
     ft = "prisma",
-  }
+  },
+  {
+    "wakatime/vim-wakatime",
+    lazy = false,
+  },
 }
