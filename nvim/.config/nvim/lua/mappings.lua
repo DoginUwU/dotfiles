@@ -13,3 +13,8 @@ map("n", "<leader>e", "<cmd> NvimTreeToggle <CR>", { desc = "Open NvimTree" })
 -- map("n", "l", "<cmd> NvimTreeOpen <CR>", { desc = "Open and Edit File"})
 
 map("n", "<leader>b", "<cmd> Telescope buffers <CR>", { desc = "List current buffers" })
+
+-- overwriting the same lines in NvChad mapping file, in order to add `async = true`
+map("n", "<leader>fm", function()
+  require("conform").format { async = true, lsp_fallback = true }
+end, { desc = "custom format files" })
