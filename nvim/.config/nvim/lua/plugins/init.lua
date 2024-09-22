@@ -91,4 +91,8 @@ return {
       }
     end,
   },
+  {
+    "prisma/vim-prisma",
+    ft = "prisma",
+  }
 }
