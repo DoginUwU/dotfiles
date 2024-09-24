@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "jabuti",
+  theme = "chadracula-evondev",
   transparency = true,
 }
 
@@ -30,6 +30,14 @@ M.ui = {
       "⣿⣿⣿⣿⣿⣿⡇⡿⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣾⣿⣿⣿⣿",
       "⣿⣿⣿⣿⣿⣿⣇⡇⠈⢻⣦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣏⣿⣿⣿⣿⣿",
       "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿",
+    },
+    buttons = {
+      { "  Find File", "Spc f f", "Telescope find_files" },
+      { "  New File", "Spc f n", "enew" },
+      { "󱥬 Projects", "Spc f p", "Telescope projects" },
+      { "󱑒 Recent files", "Spc f o", "Telescope oldfiles" },
+      { "󰊄 Find Text", "Spc f w", "Telescope live_grep" },
+      { " Quit", ":q", ":q" },
     },
   },
   tabufline = {

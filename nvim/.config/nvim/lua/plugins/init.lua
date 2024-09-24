@@ -99,4 +99,28 @@ return {
     "wakatime/vim-wakatime",
     lazy = false,
   },
+  {
+    "williamboman/mason.nvim",
+    ensure_installed = {
+      "css-lsp",
+      "eslint_d",
+      "eslint-lsp",
+      "html-lsp",
+      "lua-language-server",
+      "stylua",
+      "tailwindcss-language-server",
+      "typescript-language-server",
+    },
+  },
+  -- Why this doenst work?
+  -- {
+  --   "ahmedkhalf/project.nvim",
+  --   lazy = false,
+  --   dependencies = {
+  --     "nvim-telescope/telescope.nvim",
+  --   },
+  --   config = function()
+  --     require("telescope").load_extension "projects"
+  --   end,
+  -- },
 }
