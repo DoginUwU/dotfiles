@@ -112,6 +112,11 @@ return {
       "typescript-language-server",
     },
   },
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = true,
+  },
   -- Why this doenst work?
   -- {
   --   "ahmedkhalf/project.nvim",
