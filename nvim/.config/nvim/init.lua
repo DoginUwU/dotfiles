@@ -1,3 +1,5 @@
+vim.g.cli_shell = '/bin/zsh'
+vim.opt.shell = '/bin/zsh'
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 

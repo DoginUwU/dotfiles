@@ -28,7 +28,7 @@ lspconfig.ts_ls.setup {
     plugins = {
       {
         name = "@vue/typescript-plugin",
-        location = "/home/doginuwu/.nvm/versions/node/v22.7.0/lib/node_modules/@vue/typescript-plugin",
+        location = "/home/doginuwu/.nvm/versions/node/v22.9.0/lib/node_modules/@vue/typescript-plugin",
         languages = { "javascript", "typescript", "vue" },
       },
     },
@@ -44,7 +44,7 @@ lspconfig.volar.setup {
   filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
   init_options = {
     typescript = {
-      tsdk = "/home/doginuwu/.nvm/versions/node/v22.7.0/lib/node_modules/typescript/lib",
+      tsdk = "/home/doginuwu/.nvm/versions/node/v22.9.0/lib/node_modules/typescript/lib",
     },
   },
 }

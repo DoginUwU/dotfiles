@@ -14,6 +14,7 @@ map("n", "<leader>e", "<cmd> NvimTreeToggle <CR>", { desc = "Open NvimTree" })
 
 map("n", "<leader>b", "<cmd> Telescope buffers <CR>", { desc = "List current buffers" })
 map("n", "<leader>fp", "<cmd> Telescope projects <CR>", { desc = "List projects" })
+map("n", "<leader>fd", "<cmd> lua vim.diagnostic.open_float() <CR>", { desc = "Floating diagnostic" })
 
 -- overwriting the same lines in NvChad mapping file, in order to add `async = true`
 map("n", "<leader>fm", function()
