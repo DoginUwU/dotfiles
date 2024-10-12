@@ -26,4 +26,8 @@ map("n", "<leader>th", "<cmd> Themery <CR>", { desc = "Open Theme Selection" })
 
 map("n", "<leader>fd", "<cmd> lua vim.diagnostic.open_float() <CR>", { desc = "Floating diagnostic" })
 
+map("n", "<leader>gd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Go to Definitions" })
+map("n", "<leader>gi", "<cmd>Telescope lsp_implementations<CR>", { desc = "Go to Implementation" })
+map("n", "<leader>gr", "<cmd>Telescope lsp_references<CR>", { desc = "Go to References" })
+
 -- Autocmd

@@ -23,3 +23,5 @@ vim.g.maplocalleader = "\\"
 vim.cmd("filetype on")
 vim.cmd("filetype plugin on")
 vim.cmd("filetype indent on")
+
+vim.api.nvim_set_option("clipboard", "unnamedplus")
