@@ -35,10 +35,6 @@ return {
 					name = "Catppuccin Mocha",
 					colorscheme = "catppuccin-mocha",
 				},
-				{
-					name = "Catppuccin",
-					colorscheme = "catppuccin",
-				},
 			},
 		},
 		config = true,
