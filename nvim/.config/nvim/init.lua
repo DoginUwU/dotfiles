@@ -1,3 +1,5 @@
-require('config.lazy')
-require('mappings')
-require('options')
+require("config.lazy")
+require("mappings")
+require("options")
+require("config.diagnostics")
+require("config.windows")
