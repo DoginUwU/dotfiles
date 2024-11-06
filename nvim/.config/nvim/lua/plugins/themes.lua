@@ -5,6 +5,7 @@ return {
 		priority = 1000,
 	},
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{ "sainnhe/edge", name = "Edge", priority = 1000 },
 	{
 		"zaldih/themery.nvim",
 		lazy = false,
@@ -34,6 +35,13 @@ return {
 				{
 					name = "Catppuccin Mocha",
 					colorscheme = "catppuccin-mocha",
+				},
+				{
+					name = "Edge Neon",
+					colorscheme = "edge",
+					before = [[
+						vim.g.edge_style = 'neon'
+						]],
 				},
 			},
 		},

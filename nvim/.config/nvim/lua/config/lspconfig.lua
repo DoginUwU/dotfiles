@@ -1,7 +1,7 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspconfig = require("lspconfig")
 
-local servers = { "html", "cssls", "tailwindcss", "clangd" }
+local servers = { "html", "cssls", "tailwindcss", "clangd", "zls" }
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
