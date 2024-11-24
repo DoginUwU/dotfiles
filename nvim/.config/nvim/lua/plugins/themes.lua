@@ -6,6 +6,7 @@ return {
 	},
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{ "sainnhe/edge", name = "Edge", priority = 1000 },
+	{ "ayu-theme/ayu-vim", name = "Ayu Vim", priority = 1000 },
 	{
 		"zaldih/themery.nvim",
 		lazy = false,
@@ -41,6 +42,13 @@ return {
 					colorscheme = "edge",
 					before = [[
 						vim.g.edge_style = 'neon'
+						]],
+				},
+				{
+					name = "Ayu.vim",
+					colorscheme = "ayu",
+					before = [[
+						vim.g.ayucolor = 'mirage'
 						]],
 				},
 			},
