@@ -1,1 +1,2 @@
 - sudo nala install stow 
+- stow -t ~ nvim
