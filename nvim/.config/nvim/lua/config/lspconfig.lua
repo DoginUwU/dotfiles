@@ -1,36 +1,23 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-local lspconfig = require("lspconfig")
 
-local servers = { "html", "cssls", "tailwindcss", "clangd", "zls" }
+local servers = {
+	html = {},
+	cssls = {},
+	tailwindcss = {},
+	clangd = {},
+	zls = {},
 
-for _, lsp in ipairs(servers) do
-	lspconfig[lsp].setup({
+	tsserver = {},
+
+	volar = {
+		filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+	},
+}
+
+for lsp, config in pairs(servers) do
+	local setup_config = vim.tbl_deep_extend("force", {
 		capabilities = capabilities,
-	})
-end
+	}, config)
 
--- lspconfig.ts_ls.setup({
--- 	init_options = {
--- 		plugins = {
--- 			{
--- 				name = "@vue/typescript-plugin",
--- 				location = "/home/doginuwu/.nvm/versions/node/v22.9.0/lib/node_modules/@vue/typescript-plugin",
--- 				languages = { "javascript", "typescript", "vue" },
--- 			},
--- 		},
--- 	},
--- 	filetypes = {
--- 		"javascript",
--- 		"typescript",
--- 		"vue",
--- 	},
--- })
---
--- lspconfig.volar.setup({
--- 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
--- 	init_options = {
--- 		typescript = {
--- 			tsdk = "/home/doginuwu/.nvm/versions/node/v22.9.0/lib/node_modules/typescript/lib",
--- 		},
--- 	},
--- })
+	vim.lsp.config(lsp, setup_config)
+end
